@@ -1,0 +1,46 @@
+# Review before copying to your project as .gitignore.
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Local credentials (commit only a sanitized example)
+.env
+.env.*
+!.env.example
+
+# Python environments, caches, and packaging outputs
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.ipynb_checkpoints/
+
+# MATLAB autosave files
+*.asv
+*.m~
+
+# Build artifacts
+/build/
+/dist/
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+
+# Generated research data and outputs
+# Keep small tracked fixtures in tests/fixtures/ or examples/.
+/data/raw/
+/data/processed/
+/results/
+
+# Local logs
+*.log
+
+# Track source, configs, dependency manifests/lock files, and small fixtures.
+# Do not blanket-ignore .mat, .csv, .json, .yaml, or documentation images.
